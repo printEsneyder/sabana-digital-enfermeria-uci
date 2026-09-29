@@ -19,8 +19,6 @@ Su propósito es reemplazar la sábana clínica de papel que usa el personal de 
 
 Fue validada directamente con el personal de enfermería de la UCI y cubre los 23 módulos del registro clínico: monitoría hemodinámica, balance de líquidos, nutrición, evaluación neurológica, control de sedación, dispositivos médicos, antibióticos, control de riesgos, el proceso de enfermería **NIC/NOC** y la generación del reporte PDF de la sábana.
 
-> **Alcance:** el repositorio contiene el código de la aplicación. No incluye información clínica de pacientes, bases de datos reales ni credenciales de producción.
-
 ## Demo en vivo
 
 | Recurso | Enlace |
@@ -29,7 +27,7 @@ Fue validada directamente con el personal de enfermería de la UCI y cubre los 2
 | Video del proyecto | [![Ver video](https://img.shields.io/badge/Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://drive.google.com/file/d/1h4RWSBFs4COVogQA5zYAYrFqs7AyZJgZ/view?usp=sharing) |
 | Manual de usuario | [![Manual en PDF](https://img.shields.io/badge/Manual-7E57C2?style=for-the-badge&logo=google&logoColor=white)](Manual%20de%20Usuario%20-%20S%C3%A1bana%20Digital%20de%20Enfermer%C3%ADa.docx.pdf) |
 
-> **Nota:** la demo requiere iniciar sesión con una cuenta de la base de datos de prueba. Los datos precargados son ficticios.
+> **Nota:** la demo requiere iniciar sesión con una cuenta de la base de datos de prueba.
 
 ## Documentación incluida
 
@@ -59,12 +57,6 @@ Fue validada directamente con el personal de enfermería de la UCI y cubre los 2
 
 ## Capturas de pantalla
 
-Las capturas se guardan en `assets/screenshots/`, en la raíz del repositorio, por lo que **no se empaquetan en los builds** de ninguna plataforma.
-
-GitHub no permite superponer texto sobre una imagen en el README, así que cada nombre se ubica en una celda encima de su captura. La guía para tomarlas está en [`assets/screenshots/README.md`](assets/screenshots/README.md).
-
-### Acceso y gestión de pacientes
-
 <table>
   <tr>
     <td align="center" width="360"><strong>Inicio de sesión</strong><br>Acceso con correo y contraseña</td>
@@ -76,58 +68,23 @@ GitHub no permite superponer texto sobre una imagen en el README, así que cada 
     <td align="center"><img src="assets/screenshots/ingresos.png" alt="Lista de ingresos de pacientes" width="360"></td>
     <td align="center"><img src="assets/screenshots/ingreso-detalle.png" alt="Detalle del ingreso del paciente" width="360"></td>
   </tr>
-</table>
-
-### Registro clínico diario
-
-<table>
   <tr>
     <td align="center" width="360"><strong>Registro diario</strong><br>Las ocho secciones del turno</td>
     <td align="center" width="360"><strong>Monitoría hemodinámica</strong><br>Parámetros hora a hora</td>
-    <td align="center" width="360"><strong>Gráficos</strong><br>Curvas de presión arterial</td>
+    <td align="center" width="360"><strong>Nutrición</strong><br>IMC y requerimiento calórico</td>
   </tr>
   <tr>
     <td align="center"><img src="assets/screenshots/registro-diario.png" alt="Registro clínico diario del paciente" width="360"></td>
     <td align="center"><img src="assets/screenshots/monitoria.png" alt="Monitoría hemodinámica por hora" width="360"></td>
-    <td align="center"><img src="assets/screenshots/graficos.png" alt="Gráficos de presión arterial" width="360"></td>
-  </tr>
-</table>
-
-### Balance, nutrición y evaluación
-
-<table>
-  <tr>
-    <td align="center" width="360"><strong>Balance de líquidos</strong><br>Administrados y eliminados</td>
-    <td align="center" width="360"><strong>Nutrición</strong><br>IMC y requerimiento calórico</td>
-    <td align="center" width="360"><strong>Escala de Glasgow</strong><br>Puntaje y clasificación</td>
-  </tr>
-  <tr>
-    <td align="center"><img src="assets/screenshots/balance-liquidos.png" alt="Balance de líquidos por hora" width="360"></td>
     <td align="center"><img src="assets/screenshots/nutricion.png" alt="Registro nutricional y cálculo de IMC" width="360"></td>
-    <td align="center"><img src="assets/screenshots/glasgow.png" alt="Escala de Glasgow" width="360"></td>
   </tr>
   <tr>
-    <td align="center" width="360"><strong>Control de sedación</strong><br>Escala RASS por hora</td>
-    <td align="center" width="360"><strong>Catéteres</strong><br>Tipos, vías y fechas</td>
-    <td align="center" width="360"><strong>Antibióticos</strong><br>Días y dosis por turno</td>
-  </tr>
-  <tr>
-    <td align="center"><img src="assets/screenshots/sedacion.png" alt="Control de sedación con escala RASS" width="360"></td>
-    <td align="center"><img src="assets/screenshots/cateteres.png" alt="Registro de catéteres" width="360"></td>
-    <td align="center"><img src="assets/screenshots/antibioticos.png" alt="Tratamientos antibióticos" width="360"></td>
-  </tr>
-</table>
-
-### Proceso de enfermería y cierre de turno
-
-<table>
-  <tr>
-    <td align="center" width="360"><strong>Lista de necesidades</strong><br>Valoración de enfermería (NIC)</td>
+    <td align="center" width="360"><strong>Escala de Glasgow</strong><br>Puntaje y clasificación</td>
     <td align="center" width="360"><strong>Observaciones y firmas</strong><br>Laboratorios, transfusiones y firmas</td>
     <td align="center" width="360"><strong>Reporte PDF</strong><br>Sábana clínica de seis páginas</td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/screenshots/necesidades.png" alt="Lista de necesidades de enfermería" width="360"></td>
+    <td align="center"><img src="assets/screenshots/glasgow.png" alt="Escala de Glasgow" width="360"></td>
     <td align="center"><img src="assets/screenshots/observaciones-firmas.png" alt="Observaciones extras y firmas digitales" width="360"></td>
     <td align="center"><img src="assets/screenshots/reporte-pdf.png" alt="Reporte PDF de la sábana clínica" width="360"></td>
   </tr>
@@ -139,7 +96,6 @@ GitHub no permite superponer texto sobre una imagen en el README, así que cada 
 - Inicio de sesión con correo y contraseña mediante Firebase Authentication.
 - Restauración automática de la sesión al abrir la aplicación.
 - Carga del rol del usuario desde Firestore y control de las acciones disponibles.
-- Pantalla de bienvenida con la identidad institucional.
 
 ### Ingresos de pacientes
 - Alta de ingresos con datos de identificación, EPS o ARL, carpeta, diagnósticos de ingreso y actual, peso, talla, cama, alergias, sala (A–D) y datos del familiar.
@@ -152,7 +108,7 @@ GitHub no permite superponer texto sobre una imagen en el README, así que cada 
 - Acceso directo a cada sección desde la página del registro.
 
 ### Monitoría hemodinámica
-- Registro horario de presión arterial (sistólica, diastólica y media), frecuencia cardíaca, frecuencia respiratoria, temperatura, presión venosa central, gasto cardíaco, índice cardíaco, resistencias vasculares, saturación, FiO2, presión intraabdominal, presión pulmonar, glucemia, insulina y más.
+- Registro horario de presión arterial (sistólica, diastólica y media), frecuencia cardíaca, frecuencia respiratoria, temperatura, presión venosa central, gasto cardíaco, índice cardíaco, resistencias vasculares, saturación, FiO2, presión intraabdominal, presión pulmonar, glucemia e insulina.
 - El horario cubre las 24 horas, desde las 8 a. m. de un día hasta las 7 a. m. del siguiente.
 - Gráficos de la evolución de la presión arterial con `fl_chart`.
 
@@ -190,7 +146,7 @@ GitHub no permite superponer texto sobre una imagen en el README, así que cada 
 - **Lista de necesidades:** valoración de las necesidades detectadas, objetivos de enfermería, intervenciones realizadas y revista médica.
 - **Intervenciones:** catálogo de intervenciones con sus actividades, con la opción de importar las de otro registro.
 - **Resultados e indicadores:** resultados esperados e indicadores de cada intervención.
-- **Firma:** al firmar las necesidades o las intervenciones, la sección queda en solo lectura y ya no puede modificarse.
+- **Firma:** al firmar las necesidades o las intervenciones, la sección queda en solo lectura.
 
 ### Observaciones extras y firmas
 - Solicitudes de laboratorio y radiología, cultivos, órdenes de transfusión (glóbulos rojos, plaquetas y plasma) y observaciones libres.
@@ -205,7 +161,6 @@ GitHub no permite superponer texto sobre una imagen en el README, así que cada 
   5. Glasgow, RASS y cambios de posición.
   6. Laboratorios, cultivos, transfusiones, necesidades, observaciones y firmas.
 - El documento incluye las tipografías de la aplicación y se puede guardar, imprimir o compartir desde el dispositivo.
-- La recolección de datos reintenta automáticamente ante fallos de conexión, algo habitual en la red del hospital.
 
 ## Roles de usuario
 
@@ -219,8 +174,6 @@ El rol se define en el campo `rol` del documento del usuario, dentro de la colec
 | `NUTRICIONISTA` | Nutricionista | Registro y consulta de datos clínicos |
 | `MEDICO` | Médico | Registro y consulta de datos clínicos |
 | `INVITADO` | Invitado | Acceso de solo lectura |
-
-> **Nota sobre el estado actual:** la interfaz solo distingue el rol `ADMIN`, que es el único que ve los botones de edición, eliminación y firma. Los demás roles se comportan igual entre sí y su differentiation depende de las reglas de seguridad de Firestore. Si necesitas permisos distintos por rol, hay que extender los puntos de control de la interfaz y endurecer las reglas. Consulta la sección [Seguridad](#seguridad).
 
 ## Arquitectura
 
@@ -261,7 +214,7 @@ lib/
 
 ## Modelo de datos
 
-Cloud Firestore con dos colecciones raíz: `usuarios` y `ingresos`. Cada ingreso tiene sus propias subcolecciones, y cada registro diario anida las secciones clínicas del turno.
+Cloud Firestore con dos colecciones raíz: `usuarios` e `ingresos`. Cada ingreso tiene sus propias subcolecciones, y cada registro diario anida las secciones clínicas del turno.
 
 ```mermaid
 erDiagram
@@ -289,7 +242,7 @@ erDiagram
     BALANCES_DE_LIQUIDOS ||--o{ ELIMINADOS : "subcoleccion"
     INTERVENCIONES ||--o{ ACTIVIDADES : "del catalogo"
     INTERVENCIONES ||--o{ RESULTADOS : "esperados"
-    RESULTADOS ||--o{ INDICADORES : "de medicion"
+    INTERVENCIONES ||--o{ INDICADORES : "de medicion"
 ```
 
 | Colección | Contenido |
@@ -360,7 +313,7 @@ dart run build_runner build --delete-conflicting-outputs
 
 ### 4. Conectar con tu proyecto de Firebase
 
-**Este paso es obligatorio:** `lib/firebase_options.dart` está en `.gitignore` y no se publica en el repositorio. Sin ese archivo la aplicación no puede inicializar Firebase.
+`lib/firebase_options.dart` está en `.gitignore` y no se publica en el repositorio, por lo que debes generarlo:
 
 ```bash
 firebase login
@@ -391,13 +344,11 @@ El `applicationId` de Android es `co.edu.umariana.registro_uci` y el nombre visi
 
 ## Pruebas
 
-El repositorio incluye pruebas de las extensiones puras de Dart, que no requieren conexión con Firebase:
-
 ```bash
 flutter test
 ```
 
-`test/widget_test.dart` cubre las conversiones de texto a fecha, hora y día de la semana que usa toda la aplicación. La cobertura de los controladores, repositorios y del generador de PDF está pendiente.
+`test/widget_test.dart` cubre las conversiones de texto a fecha, hora y día de la semana que usa toda la aplicación. La cobertura de controladores, repositorios y del generador de PDF está pendiente.
 
 ## Estado del proyecto
 
@@ -410,25 +361,8 @@ flutter test
 | Compilación | Android, iOS, Web, Windows, macOS y Linux |
 | Reporte PDF | Seis páginas A4 horizontales |
 | Pruebas automatizadas | Un archivo que cubre las extensiones de Dart |
-| Reglas de seguridad | Deben ajustarse por rol antes de operar con datos reales |
-
-## Seguridad
-
-Este repositorio es público y la aplicación maneja **datos clínicos de pacientes**. Ten en cuenta lo siguiente antes de operar el proyecto:
-
-- **La configuración de Firebase no se publica.** `lib/firebase_options.dart`, `android/app/google-services.json` e `ios/Runner/GoogleService-Info.plist` están en `.gitignore`. Cada quien genera la suya con `flutterfire configure`.
-- **Usa una base de datos de prueba.** No cargues pacientes reales en un proyecto de Firebase abierto o en el plan gratuito, y no adjuntes capturas con datos clínicos a ninguna issue.
-- **Las reglas de Firestore deben estar publicadas y ajustadas por rol.** La guía de migración incluye un ejemplo de reglas abiertas que solo comprueba que exista sesión. Eso permite que cualquier cuenta autenticada lea y escriba todos los registros clínicos. Deben restringirse por rol y por documento antes de usar la aplicación con datos reales.
-- **La interfaz no es una frontera de seguridad.** Flutter es una aplicación cliente: cualquier persona puede llamar a Firestore directamente si las reglas no lo impiden. Por eso el control de acceso debe vivir en las reglas.
-- **Firmas digitales.** Las firmas se guardan como imágenes base64 dentro de los documentos de Firestore. Confirma que la política de la institución permite almacenarlas así antes de operar.
 
 ## Preguntas frecuentes
-
-**¿Por qué no se ven las imágenes del README?**
-Las capturas todavía no están en el repositorio. La guía de captura, con la lista exacta de archivos y los datos que debes evitar, está en [`assets/screenshots/README.md`](assets/screenshots/README.md).
-
-**¿La aplicación corre en el navegador?**
-Sí. No depende de plugins nativos, así que funciona en web, escritorio y móvil con el mismo código.
 
 **¿Por qué no compila después de clonar?**
 Falta generar `lib/firebase_options.dart` con `flutterfire configure`. Está excluido del repositorio a propósito.
@@ -440,7 +374,7 @@ En el campo `rol` de su documento dentro de la colección `usuarios` de Firestor
 Consulta la [`Guía de migración a Firebase`](README%20-%20Migraci%C3%B3n%20Firebase.md), que explica el proceso completo paso a paso.
 
 **¿Qué pasa si un firmado intenta modificar una sección?**
-Las secciones de necesidades e intervenciones quedan en solo lectura en cuanto se firma. No se pueden deshacer las firmas desde la interfaz.
+Las secciones de necesidades e intervenciones quedan en solo lectura en cuanto se firma.
 
 **¿Dónde queda guardado el reporte PDF?**
 Se genera en memoria y se abre con el visor del sistema, desde donde puedes guardarlo, imprimirlo o compartirlo.
